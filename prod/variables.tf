@@ -82,23 +82,23 @@ variable "key_name" {
 # Certificate Manager (ACM) & Route 53
 ################################################################################
 
-#variable "domain_name" {
-#  description = "Primary domain name for certificate issuance"
-#  type        = string
-#  default     = "dominionsystem.org"
-#}
+variable "domain_name" {
+  description = "Primary domain name for certificate issuance"
+  type        = string
+  default     = "layanofjudah.com"
+}
 
-#variable "san_domains" {
-#  description = "SANs (Subject Alternative Names) for SSL certificate"
-#  type        = list(string)
-#  default     = ["*.dominionsystem.org"]
-#}
+variable "san_domains" {
+  description = "SANs (Subject Alternative Names) for SSL certificate"
+  type        = list(string)
+ default     = ["*.layanofjudah.com"]
+}
 
-#variable "route53_zone_id" {
-#  description = "Route 53 hosted zone ID for domain validation"
-#  type        = string
-#  default     = "Z05475331ZK00RPD27RX0"
-#}
+variable "route53_zone_id" {
+  description = "Route 53 hosted zone ID for domain validation"
+  type        = string
+  default     = "Z02626942NACHZENOHJAO"
+}
 
 ################################################################################
 # ECR Repositories
