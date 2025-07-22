@@ -98,7 +98,7 @@ variable "key_name" {
 #  description = "Route 53 hosted zone ID for domain validation"
 #  type        = string
 #  default     = "Z05475331ZK00RPD27RX0"
-}
+#}
 
 ################################################################################
 # ECR Repositories
