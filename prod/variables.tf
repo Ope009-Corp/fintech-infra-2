@@ -91,7 +91,7 @@ variable "domain_name" {
 variable "san_domains" {
   description = "SANs (Subject Alternative Names) for SSL certificate"
   type        = list(string)
- default     = ["*.layanofjudah.com"]
+  default     = ["*.layanofjudah.com"]
 }
 
 variable "route53_zone_id" {
@@ -107,7 +107,7 @@ variable "route53_zone_id" {
 variable "repositories" {
   description = "List of ECR repositories to create"
   type        = list(string)
-  default     = ["fintech-app","gateway"]
+  default     = ["fintech-app", "gateway"]
 }
 
 ################################################################################
