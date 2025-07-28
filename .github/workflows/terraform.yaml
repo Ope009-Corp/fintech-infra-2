@@ -91,7 +91,7 @@ jobs:
 
       - name: Terraform init
         working-directory: ${{ env.TF_DIR }}
-        run: terraform init -backend-config="key=${{ env.TF_ENV }}/terraform.tfstate"
+        run: terraform init -backend-config="key=${{ env.TF_ENV }}/terraform.state"
 
       - name: Terraform Apply
         if: ${{ github.event.inputs.action != 'destroy' }}
